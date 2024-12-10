@@ -147,3 +147,89 @@ passengers.forEach((item) => {
 
 console.log(nameList);
 */
+
+
+
+//oppgaver
+//oppg1 while loop
+//1.
+
+let countdown = 5;
+
+while (countdown > 0) {
+    console.log(`Countdown: ${countdown}`);
+    countdown--;
+}
+console.log('Blast off 1!');
+
+//2.
+countdown = 10;
+
+while (countdown > 0) {
+    console.log(`Countdown: ${countdown}`);
+    countdown--;
+}
+console.log('Blast off 2!');
+
+countdown = 1;
+
+//3
+while (countdown < 5) {
+    console.log(`Countdown: ${countdown}`);
+    countdown++;
+}
+console.log('Blast off 3!');
+
+
+//oppg2
+
+//1
+let number = 7;
+
+for (let i = 1; i < 10; i++) {
+    console.log(`${number} x ${i} = ${number * i}`);
+}
+
+//2
+number = 7;
+
+for (let i = 1; i < 10; i++) {
+    console.log(`${number} x ${i} = ${number * i}`);
+}
+
+//3
+let stuff = ['parma', 'sunbed', 'dragon', 'mindmaps', 'dwarf'];
+
+for (let i = 0; i < stuff.length; i++) {
+    console.log(stuff[i]);
+}
+
+
+//oppg3
+//1&2&4
+const main = document.querySelector('main');
+
+let shoppingList = ['milk', 'bread', 'fish', 'egg', 'wale', 'tiger', 'jupiter'];
+shoppingList.forEach((item) => {
+    console.log(item);
+    const listItem = document.createElement('p');
+    listItem.textContent = item;
+
+    main.appendChild(listItem);
+});
+
+//3
+let klingon = ['worf', 'bird of prey', 'ka pla']
+
+klingon.forEach((item) => {
+    console.log(item);
+});
+
+//oppg4
+const numbers = [1, 2, 3];
+
+const doubled = numbers.map((number) => number * 2);
+
+console.log(doubled);
+console.log(numbers);
+
