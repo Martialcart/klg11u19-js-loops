@@ -181,7 +181,7 @@ while (countdown < 5) {
 console.log('Blast off 3!');
 
 
-//oppg2
+//oppg2 for-loops
 
 //1
 let number = 7;
@@ -205,7 +205,7 @@ for (let i = 0; i < stuff.length; i++) {
 }
 
 
-//oppg3
+//oppg3 forEach
 //1&2&4
 const main = document.querySelector('main');
 
@@ -225,11 +225,25 @@ klingon.forEach((item) => {
     console.log(item);
 });
 
-//oppg4
-const numbers = [1, 2, 3];
+//oppg4 map
+//1.
+let numbers = [1, 2, 3];
 
-const doubled = numbers.map((number) => number * 2);
+let doubled = numbers.map((number) => number * 2);
 
 console.log(doubled);
 console.log(numbers);
+
+//2.
+numbers = [1, 2, 3, 4, 5, 6, 7];
+
+doubled = numbers.map((number) => number / 2);
+
+console.log(doubled);
+console.log(numbers);
+
+//3.
+let frukt = ['eple', 'appelsin', 'banan'];
+let fruktSalg = frukt.map((f) => f + ' er på salg'); 
+console.log(fruktSalg);
 
